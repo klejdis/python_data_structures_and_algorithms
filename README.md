@@ -1,7 +1,7 @@
 # Python Data Structures and Algorithms Examples
 This repository contains Python data structures and algorithms examples. The examples are categorized into data structures and algorithms. Each category has its own subcategories. The examples are implemented in Python 3.7.4.
 
-## How to measure the O(n) time complexity of an algorithm?
+## How to measure the O(?) time complexity of an algorithm?
 The time complexity of an algorithm is the total amount of time required by an algorithm to complete its execution. It is usually expressed by using the big O notation. The big O notation is used to describe the upper bound of an algorithm's time complexity. It is used to describe the worst-case scenario of an algorithm's time complexity.
 
 ### Rule 1

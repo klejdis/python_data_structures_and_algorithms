@@ -1,2 +1,5 @@
 .venv/
 .idea
+
+# any pycache directories
+__pycache__/
