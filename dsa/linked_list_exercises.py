@@ -76,3 +76,25 @@ def remove_duplicates(ll):
             current = current.next
 
     return ll
+
+
+def longest_subseq_with_diff_one(a, n):
+    # DP array initialized to 1, as the smallest subsequence length is 1
+    dp = [1] * n
+
+    # Build the DP array
+    for i in range(1, n):
+        for j in range(i):
+            if abs(a[i] - a[j]) == 1:
+                dp[i] = max(dp[i], dp[j] + 1)
+
+    # The length of the longest subsequence
+    return max(dp)
+
+
+# Example input
+n = 7
+a = [10, 9, 4, 5, 4, 8, 6]
+
+# Output the result
+print(longest_subseq_with_diff_one(a, n))  # Output: 3
