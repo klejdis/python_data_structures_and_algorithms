@@ -223,7 +223,7 @@ class BinaryTreeLL:
 
     def __str__(self):
         # str representation of the binary tree printed on console with hierarchy
-        return self.print_tree(self.root, "", True)
+        return self.print_tree(self.root)
 
     def print_tree(self, root, level=0, prefix="Root: "):
         # If the tree is empty, return an empty string

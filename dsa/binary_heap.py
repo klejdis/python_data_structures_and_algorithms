@@ -126,3 +126,16 @@ if __name__ == "__main__":
     heap.insert(2, "MAX")
     heap.insert(1, "MAX")
     print(heap.heap)
+
+    import heapq
+
+    heap = []
+    heapq.heappush(heap, 4)
+    heapq.heappush(heap, 3)
+    heapq.heappush(heap, 2)
+    heapq.heappush(heap, 1)
+
+    print(heapq.nlargest(2, heap))
+    print(heapq.nsmallest(2, heap))
+
+    print(heap)
