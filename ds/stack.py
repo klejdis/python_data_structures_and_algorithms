@@ -30,7 +30,7 @@ class Stack:
 
 # Using LinkedList as a stack
 
-from dsa.linked_list import Node
+from ds.linked_list import Node
 
 
 class Stack:
