@@ -172,6 +172,3 @@ def quicksort(array):
     right = [x for x in array if x > pivot]  # O(n)
     return quicksort(left) + middle + quicksort(right)  # O(n log n)
 
-
-
-
