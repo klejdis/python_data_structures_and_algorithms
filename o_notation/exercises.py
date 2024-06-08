@@ -172,3 +172,28 @@ def quicksort(array):
     right = [x for x in array if x > pivot]  # O(n)
     return quicksort(left) + middle + quicksort(right)  # O(n log n)
 
+
+def count_ways(n):
+    if n < 0:
+        return 0
+
+    # Initialize dp array
+    dp = [0] * (n + 1)
+
+    # Base case
+    dp[0] = 1
+
+    # Fill dp array using recurrence relation
+    for i in range(1, n + 1):
+        dp[i] += dp[i - 1] if i - 1 >= 0 else 0
+        dp[i] += dp[i - 3] if i - 3 >= 0 else 0
+        dp[i] += dp[i - 4] if i - 4 >= 0 else 0
+
+    return dp[n]
+
+
+
+
+# Example usage
+n = 4
+print(f"The number of ways to express {n} as a sum of 1, 3, and 4 is: {count_ways(n)}")
